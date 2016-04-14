@@ -24,6 +24,8 @@
 		A43B9A0A1CBD81F500D386D2 /* Cat.sks in Resources */ = {isa = PBXBuildFile; fileRef = A43B9A091CBD81F500D386D2 /* Cat.sks */; };
 		A43B9A0C1CBD8DAC00D386D2 /* CatCurl.sks in Resources */ = {isa = PBXBuildFile; fileRef = A43B9A0B1CBD8DAC00D386D2 /* CatCurl.sks */; };
 		A43B9A0E1CBD8EA200D386D2 /* CatWakeUp.sks in Resources */ = {isa = PBXBuildFile; fileRef = A43B9A0D1CBD8EA200D386D2 /* CatWakeUp.sks */; };
+		A43B9A101CBECAD400D386D2 /* BedNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43B9A0F1CBECAD400D386D2 /* BedNode.swift */; };
+		A43B9A121CBECC9100D386D2 /* CatNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43B9A111CBECC9100D386D2 /* CatNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		A43B9A091CBD81F500D386D2 /* Cat.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Cat.sks; sourceTree = "<group>"; };
 		A43B9A0B1CBD8DAC00D386D2 /* CatCurl.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CatCurl.sks; sourceTree = "<group>"; };
 		A43B9A0D1CBD8EA200D386D2 /* CatWakeUp.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CatWakeUp.sks; sourceTree = "<group>"; };
+		A43B9A0F1CBECAD400D386D2 /* BedNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BedNode.swift; sourceTree = "<group>"; };
+		A43B9A111CBECC9100D386D2 /* CatNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				A43B99E21CBD44AB00D386D2 /* Assets.xcassets */,
 				A43B99E41CBD44AB00D386D2 /* LaunchScreen.storyboard */,
 				A43B99E71CBD44AB00D386D2 /* Info.plist */,
+				A43B9A0F1CBECAD400D386D2 /* BedNode.swift */,
+				A43B9A111CBECC9100D386D2 /* CatNode.swift */,
 			);
 			path = CatNap;
 			sourceTree = "<group>";
@@ -255,9 +261,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A43B9A101CBECAD400D386D2 /* BedNode.swift in Sources */,
 				A43B99DC1CBD44AB00D386D2 /* GameScene.swift in Sources */,
 				A43B99DE1CBD44AB00D386D2 /* GameViewController.swift in Sources */,
 				A43B9A071CBD7DE800D386D2 /* README.md in Sources */,
+				A43B9A121CBECC9100D386D2 /* CatNode.swift in Sources */,
 				A43B99D81CBD44AB00D386D2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -451,6 +459,7 @@
 				A43B99F71CBD44AB00D386D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A43B99F81CBD44AB00D386D2 /* Build configuration list for PBXNativeTarget "CatNapTests" */ = {
 			isa = XCConfigurationList;
@@ -459,6 +468,7 @@
 				A43B99FA1CBD44AB00D386D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
