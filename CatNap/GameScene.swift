@@ -33,6 +33,7 @@ class GameScene: SKScene {
         })
         
         bedNode = childNodeWithName("bed") as! BedNode
+        catNode = childNodeWithName("//cat_body") as! CatNode
         
     }
 
