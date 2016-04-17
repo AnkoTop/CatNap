@@ -8,15 +8,30 @@
 
 import SpriteKit
 
-class CatNode: SKSpriteNode, CustomNodeEvents {
+let kCatTappedNotification = "kCatTappedNotification"
+
+class CatNode: SKSpriteNode, CustomNodeEvents, InteractiveNode {
     
     func didMoveToScene() {
-        //print("cat added to scene")
+        
+        userInteractionEnabled = true
+        
         let catBodyTexture = SKTexture(imageNamed: "cat_body_outline")
         parent!.physicsBody = SKPhysicsBody(texture: catBodyTexture, size: catBodyTexture.size())
         parent!.physicsBody!.categoryBitMask = PhysicsCategory.Cat
-        parent!.physicsBody!.collisionBitMask = PhysicsCategory.Block | PhysicsCategory.Edge
+        parent!.physicsBody!.collisionBitMask = PhysicsCategory.Block | PhysicsCategory.Edge | PhysicsCategory.Spring
         parent!.physicsBody!.contactTestBitMask = PhysicsCategory.Bed | PhysicsCategory.Edge
+    }
+    
+    func interact() {
+    
+        NSNotificationCenter.defaultCenter().postNotificationName(kCatTappedNotification, object: nil)
+    
+    }
+    
+    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        super.touchesEnded(touches, withEvent: event)
+        interact()
     }
     
     
